@@ -3,13 +3,15 @@
 	xmlns="http://java.sun.com/xml/ns/j2ee"    
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"    
 	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee    
-	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">     
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	     
+	<context-param>
+<param-name>contextConfigLocation</param-name>
+<!-- applicationContext.xml文件在/WEB-INF/目錄下時可以這樣配置,-->
+<param-value>classpath:applicationContext.xml</param-value>
+</context-param>
+
 	
-  	<context-param>
-		<param-name>contextConfigLocation</param-name>
-		<!-- applicationContext.xml文件在/WEB-INF/目錄下時可以這樣配置,-->
-		<param-value>/WEB-INF/applicationContext.xml</param-value>
-	</context-param>
 
 	<!-- 配置上下文监听 -->
 	<listener>
