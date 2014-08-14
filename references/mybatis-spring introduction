@@ -1,0 +1,25 @@
+简介
+What is MyBatis-Spring?
+MyBatis-Spring 会帮助你将 MyBatis 代码无缝地整合到 Spring 中。
+使用这个类库中的类, Spring 将会加载必要的 MyBatis 工厂类和 session 类。
+这个类库也提供一个简单的方式来注入 MyBatis 数据映射器和 SqlSession 到业务层的 bean 中。
+而且它也会处理事务, 翻译 MyBatis 的异常到 Spring 的 DataAccessException 异常(数据访问异常,译者注)中。
+最终,它并不会依赖于 MyBatis,Spring 或 MyBatis-Spring 来构建应用程序代码。 
+
+Motivation
+正如第二版那样,Spring 3.0 也仅支持 iBatis2。
+那么,我们就想将 MyBatis3 的支持添加到 Spring3.0(参考 Spring Jira 中的问题)中。
+而不幸的是,Spring 3.0 的开发在 MyBatis 3.0 官方发布前就结束了。
+因为 Spring 开发团队不想发布一个基于非发布版的 MyBatis 的整合支持,那么 Spring 官方的支持就不得不继续等待了。
+要在 Spring 中支持 MyBatis,MyBatis 社区认为现在应该是自己团结贡献者和有兴趣的人一起来开始将 Spring 的整合作为 MyBatis 社区的子项目的时候了。 
+
+Requirements
+在开始使用 MyBatis-Spring 的整合之前,很重要的一点是,你要熟悉 Spring 和 MyBatis 这两个框架还有和它们有关的术语,
+本手册中不会提供二者的基本内容,安装和配置教程。 
+
+MyBatis-Spring requires Java 5 or higher and the following MyBatis and Spring versions: 
+
+MyBatis-Spring           MyBatis                 Spring  
+1.0.0 and 1.0.1      3.0.1 to 3.0.5            3.0.0 or higher  
+1.0.2                     3.0.6                3.0.0 or higher  
+1.1.0                3.1.0 or higher         3.0.0 or higher  
